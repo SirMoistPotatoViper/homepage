@@ -38,7 +38,8 @@
             
             <section class="container">
                 <p>
-                    The current game to play is: [DEVIL MAY CRY 5]
+                    The current game to play is: [BAYONETTA 3]
+                    
                 </p>
             </section>
         </div>
@@ -46,18 +47,35 @@
         <!-- GOOGLE SEARCH -->
         <form action="https://google.com/search" method="get" target="_blank">
             <input type="hidden" name="sitesearch"/>
-            <input type="text" name="q" placeholder="search..." />
-            <input type="submit" value="GO">
+            <input type="text" name="q" class="search-bar" placeholder="Search here what you desire..." />
+            <input type="submit" class="submit-button" value="Pursue your curiosity">
         </form>
-        <section class="bookmarks">
+
+        <div class="chess">
+            <div id="csoPvcCon"></div>
+            <script type="text/javascript" src="https://www.chessstrategyonline.com/js/widgets.min.js"></script>
+            <script type="text/javascript">
+                csoPlayVsComputer({
+                    boardStyle: "default",
+                pieceStyle: "uscf",
+                showCoordinates: true,
+                width: 420
+                });
+            </script>
+        </div>
+        
+        
+            <section class="bookmarks">
             <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope fa-flip"></i>
             </a>
 
             <a href="https://steamcommunity.com/profiles/76561198204536373">
-                <i class="fa-solid fa-gamepad"></i>
+                <i class="fa-solid fa-gamepad fa-beat"></i>
             </a>
-
+            <a href="http://dnd5e.wikidot.com/">
+                <i class="fa-solid fa-dice-d20 fa-spin"></i>
+            </a>
         </section>
         <div id="clock"></div>
 
