@@ -20,13 +20,13 @@ a{
     padding: 20px;
     z-index: 0;
     position:absolute;
-    top:120px;
+    top:120x;
     right:0;
   }
   
   .container {
     z-index: 1;
-    margin: 10px 0;
+    margin: -30px 0;
   }
   .profile {
     border-radius: 50%;
@@ -124,7 +124,7 @@ input{
 }
 .search-bar{
   width:100%;
-  margin-top:150px;
+  margin-top:250px;
 }
 .submit-button{
   width:100%;
@@ -163,10 +163,16 @@ transition:.2s;
 }
 @media only screen and (max-width:800px){
   #csoPvc{
-    opacity:0.5;
+    opacity:0;
+    display:none;
     transition:.2s;
 }
 #csoPvc:hover{
   opacity:1;
 }
 }
+/*@media only screen and (max-width:800px){
+  .container {
+    display:none;
+}
+}/*
